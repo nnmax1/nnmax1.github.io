@@ -1,8 +1,8 @@
 var card1= ["goat", "goat"]
-var card2 = ["goat", "cat"]
+var card2 = ["cat", "goat"]
 var card3 = ["cat", "cat"]
-var card4 = ["cat", "goat"]
-var cardArr = [card1, card2, card3, card4]
+//var card4 = ["cat", "goat"]
+var cardArr= [card1, card2, card3]
 catimg='https://i.imgur.com/AMTogc2.png'
 goatimg='https://i.imgur.com/DNNNCrn.png'
 var numCats = 0
@@ -15,8 +15,8 @@ function show() {
     var side1 = document.getElementById("side1")
     var side2 = document.getElementById("side2")
 
-    // get a card from the array
-    rand= Math.floor((Math.random() * 4));
+    // get a card from the hat 
+    rand= Math.floor((Math.random() * 3));
     // get the side of the card (goat or cat)
     if(cardArr[rand][0] === 'cat'){
         side1.setAttribute("src",catimg)

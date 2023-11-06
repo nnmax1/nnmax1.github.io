@@ -1,97 +1,54 @@
-
 <html>
-    <head>
-        <title>Goat or Cat</title>
-		<style type="text/css" >
-            body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #444;
-    max-width: 100%;
-    color:black;
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-    background: rgb(255, 210, 151);
-    zoom: 120%;
-    }
-    .backBtn {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-left: 5%;
-        background-color: DodgerBlue;
-        border: none;
-        color: white;
-        padding: 12px 30px;
-        cursor: pointer;
-        font-size: 18px;
-        width: fit-content;
-        text-decoration: none;
-      }
-      .backBtn:hover{
-        background-color: RoyalBlue;
-      }
-#side1, #side2 {
-    height: 250px;
-    width: 250px;
-    border: black;
-}
-#side2 {
-    opacity: 0;
-}
-#counts {
-    font-size: 20px;
-}
-#title {
-    font-size: 25px;
-}
-#catCount {
-    margin-right: 10px;
-}
-.back {
-    margin-left: 100px;
-}
-.aboutText {
-    margin-right: 20%;
-    margin-left:20%;
-    font-size: 25px;
-}
-button {
-    background-color: #6dc5ff; /* Green */
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-        </style>
-    </head>
-    <body>
-        <br>
-        <center>
-        <h1>Goat or Cat?</h1>
-        <div class = "container" >
-        <img id="side1" >
-        <img id="side2" >
-        <h2><span class="front">Front Side</span><span class="back">Back Side</span></h2>
-    </div>
-    <h2 id="counts">Cat(s):<span id="catCount">0</span>Goat(s):<span id="goatCount">0</span></h2>
-        <button onclick ="show();">Draw Card</button>
-        <button onclick ="reveal();">Reveal</button>
+    <style>
 
-        <button onclick ="resetCount();">Reset Counts</button>
-    </center>
-    <p class="aboutText">
-        There are 3 cards in a hat. The first card has an goat on both sides.
-        The second card has a cat on one side and a goat on the other.
-        The third card has a cat on both sides.
-        You draw one card from the hat and only see one side of the selected card. 
-        Then, you have to guess what is on the other side of the card.
-    </p>
-    <p>
-       <a href="https://github.com/nnmax1/nnmax1.github.io/blob/main/goatorcat.js" >source code for game</a>
-    </p>
-        <script src="./goatorcat.js"></script>
-    </body>
+body{ 
+    background-color: rgb(0, 0, 0);
+    font-size: 1 rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: '5%';
+}
+a{
+ color: white;   
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+    </style>
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center">Nick N</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <img src="images/about.jpeg" class= "imageAboutPage" alt="">
+            </div>
+
+            <div class="col-lg-8">
+                <p> 
+                    Hi! I am Nick N and I have a BS in Mathematics.<br>
+                    I am passionate about data science, cryptography (currently interested in <a href='https://www.ntru.org/f/hps98.pdf'>NRTU</a>), software development, and cybersecurity.<br>
+                    I am also interested in music, economics, and quantitative finance.
+                </p>
+                <div class="row mt-3">
+                    <p> 
+                        I am a results-oriented professional with a diverse skill set.
+                        I am adaptable, have strong problem-solving abilities, and am an effective communicator.  
+                        Furthermore, I am a dedicated team player with a commitment to driving success through collaboration and innovation and am eager to contribute my skills and passion to a dynamic work environment.
+                    </p>
+                </div>
+                <div class="row mt-3">
+                <p> Resume: <a href='./resume.pdf'>RESUME</a></p>
+                </div>
+
+            </div>
+    </div>
+
+</body>
 </html>
